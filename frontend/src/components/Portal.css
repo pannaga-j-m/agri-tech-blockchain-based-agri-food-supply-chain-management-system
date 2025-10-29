@@ -1,0 +1,137 @@
+/* General Page Styling */
+.page-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #333;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Wallet Display */
+.wallet-display {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: #555;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+
+/* Product List Styling */
+.product-list {
+  margin-bottom: 40px;
+}
+
+.product-list h2,
+.product-list h3 {
+  font-size: 1.8em;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Action Card Styling */
+.action-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-left: 5px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.action-card p {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.action-card strong {
+  color: #333;
+}
+
+/* Button Styling */
+.action-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-card button:hover:not(:disabled) {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.action-card button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Status Message Styling */
+.status-message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  color: #495057;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* --- Role-Specific Colors --- */
+
+/* Distributor Portal */
+.distributor-portal .page-header h1 { color: #ff9800; }
+
+/* Retailer Portal */
+.retailer-portal .page-header h1 { color: #e91e63; }
+
+/* Consumer View */
+.consumer-view h2 { font-size: 1.8em; }
+.consumer-view hr { border: none; border-top: 1px solid #eee; margin: 20px 0; }
+.consumer-view h4 { font-size: 1.4em; margin-bottom: 15px; color: #333; }
+.consumer-view input {
+  width: calc(100% - 100px);
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 1em;
+}
+.consumer-view button {
+    width: 100px;
+    padding: 14px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}

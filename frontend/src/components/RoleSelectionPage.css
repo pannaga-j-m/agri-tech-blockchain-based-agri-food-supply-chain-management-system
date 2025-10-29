@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.role-selection-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.role-selection-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+}
+
+.role-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.role-header p {
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.back-button {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.role-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: 200% auto;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.role-card span {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* --- Unique Gradients for Each Role --- */
+.role-card.farmer {
+    background-image: linear-gradient(to right, #28a745 0%, #218838 51%, #28a745 100%);
+}
+.role-card.distributor {
+    background-image: linear-gradient(to right, #ff9800 0%, #e68a00 51%, #ff9800 100%);
+}
+.role-card.retailer {
+    background-image: linear-gradient(to right, #e91e63 0%, #c2185b 51%, #e91e63 100%);
+}
+.role-card.consumer {
+    background-image: linear-gradient(to right, #007bff 0%, #0069d9 51%, #007bff 100%);
+}
+
+.dashboard-link-container {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.dashboard-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: #343a40;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.dashboard-link:hover {
+    background-color: #495057;
+}
+

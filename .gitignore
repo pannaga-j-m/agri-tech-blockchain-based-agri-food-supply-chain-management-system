@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Hardhat build files
+artifacts/
+cache/
+
+# Secret environment variables
+.env
+
+# SQLite Database
+*.db
+
+# Log files
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db

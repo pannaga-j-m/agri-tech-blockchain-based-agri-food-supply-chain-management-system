@@ -1,0 +1,84 @@
+/* Purple Theme using CSS Variables */
+:root {
+  --primary-purple: #8E44AD; /* A strong, primary purple */
+  --primary-purple-dark: #7B249E; /* A darker shade for hover effects */
+  --deep-purple-text: #6A1B9A; /* A deep purple for headings */
+  --background-light-lavender: #F4F0F8; /* A very light lavender for backgrounds */
+  --text-dark: #343A40; /* A dark charcoal for main text */
+  --text-medium: #6C757D; /* A muted grey for secondary text */
+  --background-white: #ffffff;
+  --shadow-color: rgba(90, 48, 134, 0.07); /* A subtle purple-tinted shadow */
+}
+
+.landing-container {
+  font-family: sans-serif;
+  color: var(--text-dark);
+}
+
+.landing-header {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--background-light-lavender);
+}
+
+.landing-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.landing-header p {
+  font-size: 1.2rem;
+  color: var(--text-medium);
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: var(--primary-purple);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-purple-dark);
+}
+
+.features-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: var(--background-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--deep-purple-text);
+}
+
+.feature-card p {
+  color: var(--text-medium);
+  line-height: 1.6;
+}

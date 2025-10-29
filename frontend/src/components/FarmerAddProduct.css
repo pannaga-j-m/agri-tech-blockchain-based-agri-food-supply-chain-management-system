@@ -1,0 +1,119 @@
+/* General Page Styling */
+.page-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #333;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Wallet Display */
+.wallet-display {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: #555;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+
+/* Action Card Styling */
+.action-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.action-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.action-card h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid;
+  font-weight: 500;
+}
+
+/* Input and Form Styling */
+.action-card input[type="text"],
+.action-card input[type="number"],
+.date-picker {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-card input:focus,
+.date-picker:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
+
+/* Button Styling */
+.action-card button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-card button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.action-card button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Status Message Styling */
+.status-message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  color: #495057;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Specific styling for the transfer card */
+.action-card[style*="ff9800"] p {
+    font-size: 1.1em;
+}
+.action-card[style*="ff9800"] strong {
+    color: #333;
+}
